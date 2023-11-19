@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.image-container {
+    position: relative;
+}
+
+.clickable-image {
+    width: 100%;
+    /*max-width: 800px;  Adjust the max-width based on your image size */
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    height: auto;
+    width: 200px;
+    top: 10px;
+    right: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+    display: none;
+}
+
+.popup img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.popup-content {
+    padding: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}

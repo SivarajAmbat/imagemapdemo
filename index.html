@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Clickable Image Demo</title>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="test.jpg" alt="Football" usemap="#imageMap" class="clickable-image">
+</div>
+
+<div class="popup" id="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <div id="popup-content"></div>
+</div>
+
+<map name="imageMap">
+    <area shape="rect" coords="627,333,1066,730" alt="Area 1" onclick="showPopup(event)">
+  </map>
+
+<div class="hide" id="pop1">
+    <img src="sample.png" />
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
